@@ -70,3 +70,5 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+require 'support/shared/requests'

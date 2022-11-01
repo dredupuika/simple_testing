@@ -1,0 +1,17 @@
+<h1>Newest Product</h1>
+
+<p><%= @products.first.name if @products.first %></p>
+
+<h1>Product List</h1>
+
+<% if @products.present? %>
+  <ul>
+    <% @products.each do |product| %>
+      <li>
+        <%= product.name %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No products</p>
+<% end %>
